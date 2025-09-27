@@ -20,9 +20,26 @@ export default function Header({ identity }) {
   return (
     <header>
       <div className="container header-bar">
-        <Link to="/" className="brand" aria-label={`${identity?.name || 'Biz Dev Phil'} home`}>
-          <span className="brand-title">{identity?.name || 'Biz Dev Phil'}</span>
-        </Link>
+        <div className="brand-group">
+          <button
+            type="button"
+            className="menu-toggle"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            <span className="sr-only">Toggle navigation</span>
+            <span aria-hidden="true" className={`menu-icon${menuOpen ? ' open' : ''}`}>
+              <span />
+              <span />
+              <span />
+            </span>
+          </button>
+
+          <Link to="/" className="brand" aria-label={`${identity?.name || 'Biz Dev Phil'} home`}>
+            <span className="brand-title">{identity?.name || 'Biz Dev Phil'}</span>
+          </Link>
+        </div>
 
         <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map((item) => (
@@ -43,21 +60,6 @@ export default function Header({ identity }) {
           <ThemeToggle />
           <CTA label="Let’s Collaborate" to="/contact" />
         </div>
-
-        <button
-          type="button"
-          className="menu-toggle"
-          aria-expanded={menuOpen}
-          aria-controls="mobile-navigation"
-          onClick={() => setMenuOpen((prev) => !prev)}
-        >
-          <span className="sr-only">Toggle navigation</span>
-          <span aria-hidden="true" className={`menu-icon${menuOpen ? ' open' : ''}`}>
-            <span />
-            <span />
-            <span />
-          </span>
-        </button>
       </div>
 
       <div

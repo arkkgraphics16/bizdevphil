@@ -2,7 +2,7 @@ import scrollToHash from '../utils/scrollToHash.js';
 import useActiveSections from '../hooks/useActiveSections.js';
 
 const sections = [
-  { id: 'about-top', label: 'About' },
+  { id: 'about-top', label: 'Info' },
   { id: 'testimonials', label: 'Testimonials' },
   { id: 'brands', label: 'Brands' },
 ];

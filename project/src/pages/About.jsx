@@ -155,16 +155,18 @@ export default function About() {
         </aside>
 
         <div className="about-content">
-          <div className="about-section-nav">
-            <PageSectionNav />
-          </div>
-
           <section id="about-top" data-section className="section about-hero">
             <div className="stack-lg">
               <div className="stack-md">
-                <h1>{identity.name}</h1>
+                <div className="stack-sm">
+                  <h1>Jezrel Phil Nacar</h1>
+                  <PageSectionNav className="hero-nav" />
+                </div>
                 <p className="lead">{identity.value}</p>
-                <CTA />
+                <div className="stack-sm">
+                  <CTA label="View my services" to="/services" variant="secondary" />
+                  <CTA />
+                </div>
               </div>
               <div className="stack-md">
                 <div className="stack-sm">
