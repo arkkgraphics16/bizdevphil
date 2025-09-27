@@ -1,0 +1,74 @@
+{
+  "identity": {
+    "name": "Biz Dev Phil",
+    "subtitle": "Online Brand Strategist",
+    "value": "Helping businesses develop their brand online",
+    "socials": [
+      {"label":"LinkedIn","href":"#"},
+      {"label":"Facebook","href":"#"},
+      {"label":"X","href":"#"},
+      {"label":"Instagram","href":"#"},
+      {"label":"YouTube","href":"#"},
+      {"label":"TikTok","href":"#"}
+    ]
+  },
+  "brands": ["Brand One (placeholder)", "Brand Two (placeholder)", "Brand Three (placeholder)"],
+  "testimonials": [],
+  "services": [
+    {
+      "tab": "Websites Branding",
+      "title": "Resort Website Refresh",
+      "result": "+38% direct bookings in 60 days",
+      "badges": ["React", "Hospitality"],
+      "link": "#"
+    },
+    {
+      "tab": "Websites Branding",
+      "title": "Real Estate Landing Pages",
+      "result": "12% lead-to-visit uplift",
+      "badges": ["Multi-variant copy", "Real Estate"],
+      "link": "#"
+    },
+    {
+      "tab": "Apps & Tools",
+      "title": "Messenger Lead Tool",
+      "result": "Auto-qualifies inquiries to save time",
+      "badges": ["Node", "Cloudflare"],
+      "link": "#"
+    },
+    {
+      "tab": "Content",
+      "title": "30-Day Reels System (Cafe)",
+      "result": "Daily content plan w/ scripts",
+      "badges": ["IG/FB", "Restaurants"],
+      "link": "#"
+    },
+    {
+      "tab": "Automations",
+      "title": "Stripe Billing Flow (Prototype)",
+      "result": "Frictionless checkout logic",
+      "badges": ["Stripe", "Ops"],
+      "link": "#"
+    }
+  ],
+  "researches": [
+    {
+      "title": "Client X — Content Strategy Test",
+      "goal": "Identify the most effective hooks for the niche to drive view time and inquiries.",
+      "method": "Research 50 hooks; select the top 3 by performance; write scripts; post for 1 month.",
+      "result": "TBD — track views, watch time, CTR, and inquiries weekly.",
+      "period": "30 days (4-week cycle)",
+      "tools": "Posting suite + spreadsheet tracker"
+    }
+  ],
+  "contact": {
+    "phone": "+63 908 722 0449",
+    "email": "bizdevphil@gmail.com",
+    "mapLink": "https://maps.app.goo.gl/dFPoievJmfsYC639A",
+    "address": "Tapo-Tapo road, New Buswang, Kalibo Aklan"
+  },
+  "seo": {
+    "title": "Biz Dev Phil — Online Brand Strategist",
+    "description": "Helping businesses develop their brand online with websites, apps & tools, content systems, research, and automations."
+  }
+}
