@@ -1,0 +1,14 @@
+{
+  "name": "bizdevphil-monorepo",
+  "private": true,
+  "workspaces": [
+    "project"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace project",
+    "dev": "npm run dev --workspace project",
+    "lint": "npm run lint --workspace project",
+    "preview": "npm run preview --workspace project",
+    "format": "npm run format --workspace project"
+  }
+}
