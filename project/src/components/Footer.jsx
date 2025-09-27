@@ -4,7 +4,7 @@ export default function Footer({ identity }) {
   const year = new Date().getFullYear();
   return (
     <footer>
-      <div className="container stack-md">
+      <div className="container stack-md footer-content">
         <nav aria-label="Footer navigation" className="flex flex-wrap" style={{ gap: '1rem' }}>
           <Link to="/">About</Link>
           <Link to="/services">Services</Link>
