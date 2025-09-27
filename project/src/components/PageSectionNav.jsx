@@ -7,11 +7,11 @@ const sections = [
   { id: 'brands', label: 'Brands' },
 ];
 
-export default function PageSectionNav() {
+export default function PageSectionNav({ className = '' }) {
   const active = useActiveSections(sections.map((section) => section.id));
 
   return (
-    <nav aria-label="About page sections" className="flex flex-wrap" style={{ gap: '0.75rem', marginTop: '2rem' }}>
+    <nav aria-label="About page sections" className={`page-section-nav flex flex-wrap ${className}`.trim()}>
       {sections.map((section) => (
         <button
           key={section.id}
