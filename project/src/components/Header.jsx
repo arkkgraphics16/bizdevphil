@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle.jsx';
 import CTA from './CTA.jsx';
@@ -10,21 +11,20 @@ const navItems = [
 
 export default function Header({ identity }) {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
 
   return (
     <header>
-      <div className="container flex justify-between align-center" style={{ gap: '1.5rem' }}>
+      <div className="container header-bar">
         <Link to="/" className="brand" aria-label={`${identity?.name || 'Biz Dev Phil'} home`}>
-          <div style={{ display: 'grid', gap: '0.1rem' }}>
-            <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: '1.25rem' }}>
-              {identity?.name || 'Biz Dev Phil'}
-            </span>
-            <span className="text-muted" style={{ fontSize: '0.85rem' }}>
-              {identity?.subtitle || 'Online Brand Strategist'}
-            </span>
-          </div>
+          <span className="brand-title">{identity?.name || 'Biz Dev Phil'}</span>
         </Link>
-        <nav className="flex align-center" aria-label="Main navigation" style={{ gap: '1.5rem' }}>
+
+        <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
@@ -38,10 +38,53 @@ export default function Header({ identity }) {
             </NavLink>
           ))}
         </nav>
-        <div className="flex align-center" style={{ gap: '1rem' }}>
+
+        <div className="header-actions">
           <ThemeToggle />
           <CTA label="Let’s Collaborate" to="/contact" />
         </div>
+
+        <button
+          type="button"
+          className="menu-toggle"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          <span className="sr-only">Toggle navigation</span>
+          <span aria-hidden="true" className={`menu-icon${menuOpen ? ' open' : ''}`}>
+            <span />
+            <span />
+            <span />
+          </span>
+        </button>
+      </div>
+
+      <div
+        id="mobile-navigation"
+        className={`mobile-nav${menuOpen ? ' open' : ''}`}
+        aria-hidden={!menuOpen}
+      >
+        <nav aria-label="Mobile main navigation">
+          <ul>
+            {navItems.map((item) => (
+              <li key={item.to}>
+                <NavLink
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `nav-link${isActive ? ' active' : ''}`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+          <div className="mobile-nav-actions">
+            <CTA label="Let’s Collaborate" to="/contact" />
+            <ThemeToggle />
+          </div>
+        </nav>
       </div>
     </header>
   );
