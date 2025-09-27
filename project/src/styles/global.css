@@ -162,6 +162,16 @@ footer nav a {
   font-size: 0.95rem;
 }
 
+.footer-content {
+  justify-items: center;
+  text-align: center;
+}
+
+footer nav.flex {
+  justify-content: center;
+  align-items: center;
+}
+
 .header-bar {
   display: flex;
   align-items: center;
@@ -539,7 +549,6 @@ section + section {
 }
 
 .about-hero {
-  order: 1;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
