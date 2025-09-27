@@ -103,6 +103,14 @@ export default function Contact() {
           <button type="submit" className="btn" disabled={status === 'submitting'}>
             {status === 'submitting' ? 'Sending…' : 'Send Message'}
           </button>
+          <a
+            href="https://m.me/bizdevphil"
+            className="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chat in Messenger
+          </a>
           {feedback ? (
             <p id="form-feedback" className={status === 'success' ? '' : 'text-muted'}>
               {feedback}
