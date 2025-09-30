@@ -47,7 +47,7 @@
   "testimonials": [],
   "services": [
     {
-      "tab": "Websites Branding",
+      "tab": "Apps & Tools",
       "title": "Contracted POS",
       "result": "Interface and marketing site for ProtoCode franchise rollouts.",
       "badges": [
@@ -55,7 +55,6 @@
         "POS",
         "SaaS"
       ],
-      "link": "#",
       "previews": [
         {
           "label": "Brand board",
@@ -66,28 +65,6 @@
           "label": "Website preview",
           "src": "images/previews/contracted-pos/preview.jpg",
           "alt": "Laptop and mobile preview of the Contracted POS website."
-        }
-      ]
-    },
-    {
-      "tab": "Websites Branding",
-      "title": "Affiliated Media Hub",
-      "result": "Landing page for content syndication partners.",
-      "badges": [
-        "Creative Direction",
-        "Affiliates"
-      ],
-      "link": "#",
-      "previews": [
-        {
-          "label": "Hero concept",
-          "src": "images/previews/affiliated-media-hub/brand.jpg",
-          "alt": "Laptop mockup of the Affiliated Media Hub hero section."
-        },
-        {
-          "label": "Website preview",
-          "src": "images/previews/affiliated-media-hub/preview.jpg",
-          "alt": "Website preview for Affiliated Media Hub showing partner brands."
         }
       ]
     },
@@ -121,7 +98,7 @@
         "Community",
         "Product"
       ],
-      "link": "#",
+      "link": "https://pbnoras.vercel.app/",
       "previews": [
         {
           "label": "Dashboard concept",
@@ -143,7 +120,7 @@
         "Product",
         "Dashboard"
       ],
-      "link": "#",
+      "link": "https://pay-up-so-you-do-it-ai.vercel.app/",
       "previews": [
         {
           "label": "UI system",
@@ -165,7 +142,7 @@
         "AI",
         "Lead Capture"
       ],
-      "link": "#",
+      "link": "https://www.luciadecode.com/",
       "previews": [
         {
           "label": "Dark mode concept",
@@ -187,7 +164,7 @@
         "Healthcare",
         "Conversion"
       ],
-      "link": "#",
+      "link": "https://konsultamd.vercel.app/",
       "previews": [
         {
           "label": "Brand direction",
@@ -209,7 +186,7 @@
         "E-commerce",
         "Campaign"
       ],
-      "link": "#",
+      "link": null,
       "previews": [
         {
           "label": "Brand storyboard",
