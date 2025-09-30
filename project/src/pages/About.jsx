@@ -1,6 +1,7 @@
 import CTA from '../components/CTA.jsx';
 import PageSectionNav from '../components/PageSectionNav.jsx';
 import content from '../data/content.json';
+import resolveAssetPath from '../utils/assetPath.js';
 
 const socialIcons = {
   LinkedIn: (
@@ -88,6 +89,8 @@ const getSocialIcon = (label) => socialIcons[label] ?? (
 
 export default function About() {
   const { identity, brands, contact } = content;
+  const portraitSrc = identity?.portrait?.src ? resolveAssetPath(identity.portrait.src) : '';
+  const portraitAlt = identity?.portrait?.alt || identity?.name || 'Profile photo';
 
   const contactItems = [
     {
@@ -114,7 +117,13 @@ export default function About() {
     <div className="container">
       <div className="about-layout">
         <aside className="about-sidebar" aria-label="Profile overview">
-          <div className="about-photo" aria-hidden="true" />
+          {portraitSrc ? (
+            <figure className="about-photo">
+              <img src={portraitSrc} alt={portraitAlt} />
+            </figure>
+          ) : (
+            <div className="about-photo about-photo--placeholder" aria-hidden="true" />
+          )}
           <div className="stack-sm">
             <h2 className="about-name">{identity.name}</h2>
             <p className="about-role">{identity.subtitle}</p>

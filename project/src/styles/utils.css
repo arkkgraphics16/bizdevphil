@@ -40,6 +40,42 @@
   mix-blend-mode: screen;
 }
 
+.preview-media {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.preview-media-button {
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-2);
+  cursor: pointer;
+  position: relative;
+}
+
+.preview-media-button:focus-visible {
+  outline: 3px solid rgba(124, 58, 237, 0.4);
+  outline-offset: 2px;
+}
+
+.preview-media-button img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.preview-media-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .map-placeholder {
   width: 100%;
   min-height: 200px;
