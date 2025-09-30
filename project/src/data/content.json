@@ -3,52 +3,225 @@
     "name": "Biz Dev Phil",
     "subtitle": "Online Brand Strategist",
     "value": "Helping businesses develop their brand online",
+    "portrait": {
+      "src": "images/profile/portrait.jpg",
+      "alt": "Portrait of Jezrel Phil Nacar"
+    },
     "socials": [
-      {"label":"LinkedIn","href":"#"},
-      {"label":"Facebook","href":"#"},
-      {"label":"X","href":"#"},
-      {"label":"Instagram","href":"#"},
-      {"label":"YouTube","href":"#"},
-      {"label":"TikTok","href":"#"}
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "label": "Facebook",
+        "href": "#"
+      },
+      {
+        "label": "X",
+        "href": "#"
+      },
+      {
+        "label": "Instagram",
+        "href": "#"
+      },
+      {
+        "label": "YouTube",
+        "href": "#"
+      },
+      {
+        "label": "TikTok",
+        "href": "#"
+      }
     ]
   },
-  "brands": ["Brand One (placeholder)", "Brand Two (placeholder)", "Brand Three (placeholder)"],
+  "brands": [
+    "ProtoCode Solutions",
+    "Tune Media Collective",
+    "BoutiqueBeach Resort",
+    "Everyone's Goals",
+    "Hey! Challenger",
+    "Lucia AI Concierge",
+    "KonsultaMD",
+    "Pinoyship Japan"
+  ],
   "testimonials": [],
   "services": [
     {
       "tab": "Websites Branding",
-      "title": "Resort Website Refresh",
-      "result": "+38% direct bookings in 60 days",
-      "badges": ["React", "Hospitality"],
-      "link": "#"
+      "title": "Contracted POS",
+      "result": "Interface and marketing site for ProtoCode franchise rollouts.",
+      "badges": [
+        "Branding",
+        "POS",
+        "SaaS"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "Brand board",
+          "src": "images/previews/contracted-pos/brand.jpg",
+          "alt": "Branding mockups for the Contracted POS project."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/contracted-pos/preview.jpg",
+          "alt": "Laptop and mobile preview of the Contracted POS website."
+        }
+      ]
     },
     {
       "tab": "Websites Branding",
-      "title": "Real Estate Landing Pages",
-      "result": "12% lead-to-visit uplift",
-      "badges": ["Multi-variant copy", "Real Estate"],
-      "link": "#"
+      "title": "Affiliated Media Hub",
+      "result": "Landing page for content syndication partners.",
+      "badges": [
+        "Creative Direction",
+        "Affiliates"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "Hero concept",
+          "src": "images/previews/affiliated-media-hub/brand.jpg",
+          "alt": "Laptop mockup of the Affiliated Media Hub hero section."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/affiliated-media-hub/preview.jpg",
+          "alt": "Website preview for Affiliated Media Hub showing partner brands."
+        }
+      ]
     },
     {
-      "tab": "Apps & Tools",
-      "title": "Messenger Lead Tool",
-      "result": "Auto-qualifies inquiries to save time",
-      "badges": ["Node", "Cloudflare"],
-      "link": "#"
+      "tab": "Websites Branding",
+      "title": "Hospitality Industry",
+      "result": "Booking-ready experience for BoutiqueBeach Resort.",
+      "badges": [
+        "Hospitality",
+        "UX"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "Brand visuals",
+          "src": "images/previews/hospitality-industry/brand.jpg",
+          "alt": "Brand presentation for the BoutiqueBeach Resort website."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/hospitality-industry/preview.jpg",
+          "alt": "Laptop and mobile mockups of the resort booking website."
+        }
+      ]
     },
     {
-      "tab": "Content",
-      "title": "30-Day Reels System (Cafe)",
-      "result": "Daily content plan w/ scripts",
-      "badges": ["IG/FB", "Restaurants"],
-      "link": "#"
+      "tab": "Websites Branding",
+      "title": "Community Webtool",
+      "result": "Goal-tracking portal for Everyone's Goals community.",
+      "badges": [
+        "Community",
+        "Product"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "Dashboard concept",
+          "src": "images/previews/community-webtool/brand.jpg",
+          "alt": "Dashboard branding for the community webtool project."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/community-webtool/preview.jpg",
+          "alt": "Responsive preview of the community goal tracking tool."
+        }
+      ]
     },
     {
-      "tab": "Automations",
-      "title": "Stripe Billing Flow (Prototype)",
-      "result": "Frictionless checkout logic",
-      "badges": ["Stripe", "Ops"],
-      "link": "#"
+      "tab": "Websites Branding",
+      "title": "Admin Dashboard",
+      "result": "Approval workflow for the Hey! Challenger platform.",
+      "badges": [
+        "Product",
+        "Dashboard"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "UI system",
+          "src": "images/previews/admin-dashboard/brand.jpg",
+          "alt": "Branding assets for the admin dashboard experience."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/admin-dashboard/preview.jpg",
+          "alt": "Desktop and mobile views of the admin dashboard."
+        }
+      ]
+    },
+    {
+      "tab": "Websites Branding",
+      "title": "$2K Chatbot",
+      "result": "Conversation-first product page for the Lucia concierge bot.",
+      "badges": [
+        "AI",
+        "Lead Capture"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "Dark mode concept",
+          "src": "images/previews/2000usd-chatbot/brand.jpg",
+          "alt": "Design concept for the Lucia concierge chatbot page."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/2000usd-chatbot/preview.jpg",
+          "alt": "Laptop and mobile preview of the Lucia chatbot experience."
+        }
+      ]
+    },
+    {
+      "tab": "Websites Branding",
+      "title": "Health Industry",
+      "result": "Telehealth landing site for KonsultaMD service packages.",
+      "badges": [
+        "Healthcare",
+        "Conversion"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "Brand direction",
+          "src": "images/previews/health-industry/brand.jpg",
+          "alt": "Brand direction mockups for the health industry project."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/health-industry/preview.jpg",
+          "alt": "Responsive preview of the KonsultaMD landing page."
+        }
+      ]
+    },
+    {
+      "tab": "Websites Branding",
+      "title": "Online Store Landing Page",
+      "result": "Conversion-first launchpad for Pinoyship Japan storefront.",
+      "badges": [
+        "E-commerce",
+        "Campaign"
+      ],
+      "link": "#",
+      "previews": [
+        {
+          "label": "Brand storyboard",
+          "src": "images/previews/online-store-landing/brand.jpg",
+          "alt": "Brand storyboard for the Pinoyship Japan launch page."
+        },
+        {
+          "label": "Website preview",
+          "src": "images/previews/online-store-landing/preview.jpg",
+          "alt": "Laptop and mobile preview of the online store landing page."
+        }
+      ]
     }
   ],
   "researches": [
