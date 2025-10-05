@@ -475,6 +475,7 @@ section + section {
   flex-direction: column;
   gap: 2.5rem;
   padding: 3rem 0;
+  position: relative;
 }
 
 .about-sidebar {
@@ -588,6 +589,7 @@ section + section {
 .about-content {
   display: grid;
   gap: 2.5rem;
+  margin-left: 0;
 }
 
 .about-hero {
@@ -620,27 +622,26 @@ section + section {
   }
 
   .about-layout {
-    display: grid;
-    grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
+    display: block;
+    --about-sidebar-width: clamp(260px, 28vw, 320px);
+    --about-sidebar-gap: clamp(2rem, 4vw, 3rem);
   }
 
   .about-sidebar {
-    order: initial;
-    position: sticky;
+    position: fixed;
     top: calc(var(--header-height) + 1.5rem);
-    align-self: start;
+    left: max(1.5rem, calc((100vw - 1280px) / 2));
+    width: var(--about-sidebar-width);
+    z-index: 2;
   }
 
   .about-content {
-    order: initial;
+    margin-left: calc(var(--about-sidebar-width) + var(--about-sidebar-gap));
+    gap: clamp(3rem, 4vw, 3.75rem);
   }
 
   .about-photo {
     width: 100%;
-  }
-
-  .about-content {
-    gap: clamp(3rem, 4vw, 3.75rem);
   }
 }
 
@@ -650,17 +651,21 @@ section + section {
   }
 
   .about-layout {
-    gap: clamp(3.25rem, 6vw, 4.5rem);
+    --about-sidebar-width: clamp(280px, 24vw, 340px);
+    --about-sidebar-gap: clamp(2.5rem, 5vw, 4rem);
   }
 
   .about-sidebar {
     padding: 2.25rem;
-  }
-
-  .about-sidebar {
+    top: calc(var(--header-height) + 2rem);
+    left: max(2rem, calc((100vw - 1340px) / 2));
     max-height: calc(100vh - var(--header-height) - 3rem);
     overflow-y: auto;
     overscroll-behavior: contain;
+  }
+
+  .about-content {
+    margin-left: calc(var(--about-sidebar-width) + var(--about-sidebar-gap));
   }
 }
 
