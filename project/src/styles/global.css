@@ -466,6 +466,10 @@ section + section {
   }
 }
 
+.about-container {
+  width: min(100% - 2.5rem, 1240px);
+}
+
 .about-layout {
   display: flex;
   flex-direction: column;
@@ -611,9 +615,13 @@ section + section {
 }
 
 @media (min-width: 768px) {
+  .about-container {
+    width: min(100% - 3rem, 1280px);
+  }
+
   .about-layout {
     display: grid;
-    grid-template-columns: minmax(260px, 320px) 1fr;
+    grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
   }
 
   .about-sidebar {
@@ -632,13 +640,17 @@ section + section {
   }
 
   .about-content {
-    gap: 3rem;
+    gap: clamp(3rem, 4vw, 3.75rem);
   }
 }
 
 @media (min-width: 1024px) {
+  .about-container {
+    width: min(100% - 4rem, 1340px);
+  }
+
   .about-layout {
-    gap: 3rem;
+    gap: clamp(3.25rem, 6vw, 4.5rem);
   }
 
   .about-sidebar {
