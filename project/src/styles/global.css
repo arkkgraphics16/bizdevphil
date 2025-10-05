@@ -644,6 +644,12 @@ section + section {
   .about-sidebar {
     padding: 2.25rem;
   }
+
+  .about-sidebar {
+    max-height: calc(100vh - var(--header-height) - 3rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
