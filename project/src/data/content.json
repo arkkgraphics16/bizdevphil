@@ -200,6 +200,57 @@
           "alt": "Laptop and mobile preview of the online store landing page."
         }
       ]
+    },
+    {
+      "tab": "Websites Branding",
+      "title": "TerraNova Realty",
+      "result": "Regenerative land stewardship site for TerraNova's master-planned communities.",
+      "badges": [
+        "Real Estate",
+        "Sustainability"
+      ],
+      "link": "https://terranovarealty.vercel.app/",
+      "previews": [
+        {
+          "label": "Website preview",
+          "src": "images/previews/terranova-realty/preview.png",
+          "alt": "Placeholder preview of the TerraNova Realty website."
+        }
+      ]
+    },
+    {
+      "tab": "Websites Branding",
+      "title": "Yuujou Events",
+      "result": "Community event hub highlighting fandom collaborations and upcoming spotlights.",
+      "badges": [
+        "Community",
+        "Events"
+      ],
+      "link": "https://yuujouevents-alter.vercel.app/",
+      "previews": [
+        {
+          "label": "Website preview",
+          "src": "images/previews/yuujou-events/preview.png",
+          "alt": "Placeholder preview of the Yuujou Events website."
+        }
+      ]
+    },
+    {
+      "tab": "Websites Branding",
+      "title": "Savore",
+      "result": "Warm restaurant landing page inviting guests to explore Savore's dining experience.",
+      "badges": [
+        "Restaurant",
+        "Hospitality"
+      ],
+      "link": "https://savore-three.vercel.app/",
+      "previews": [
+        {
+          "label": "Website preview",
+          "src": "images/previews/savore/preview.png",
+          "alt": "Placeholder preview of the Savore website."
+        }
+      ]
     }
   ],
   "researches": [
