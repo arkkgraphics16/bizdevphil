@@ -106,6 +106,31 @@ section[data-section] {
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
+.card--preview {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card--preview .preview-media {
+  margin: 0;
+}
+
+.card--preview .preview-media-button {
+  border-radius: 0;
+  background: none;
+}
+
+.card--preview .preview-media-button img {
+  aspect-ratio: 16 / 10;
+  height: 100%;
+}
+
+.card--preview .preview-card-body {
+  padding: 1.75rem;
+}
+
 .card:hover,
 .card:focus-within {
   transform: translateY(-4px);
