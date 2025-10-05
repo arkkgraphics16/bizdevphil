@@ -47,7 +47,7 @@ export default function PreviewCard({ title, result, badges = [], link, previews
   };
 
   return (
-    <article className="card stack-md">
+    <article className="card card--preview">
       {activePreview ? (
         <figure className="preview-media">
           <button
@@ -77,38 +77,30 @@ export default function PreviewCard({ title, result, badges = [], link, previews
               </span>
             ) : null}
           </button>
-          {(activePreview.label || hasAlternate) && (
-            <figcaption className="preview-media-label">
-              {activePreview.label || 'Preview'}
-              {hasAlternate && activePreviewIndex === 0 && normalizedPreviews[1]?.label
-                ? ` · Hover to see ${normalizedPreviews[1].label}`
-                : null}
-            </figcaption>
-          )}
         </figure>
       ) : (
         <div className="gradient-thumb" aria-hidden="true"></div>
       )}
-      <div>
+      <div className="preview-card-body stack-md">
         <h3 style={{ marginBottom: '0.25rem' }}>{title}</h3>
         <p className="text-muted">{result}</p>
+        {badges?.length ? (
+          <div className="badge-group">
+            {badges.map((badge) => (
+              <span className="badge" key={badge}>
+                {badge}
+              </span>
+            ))}
+          </div>
+        ) : null}
+        {link ? (
+          <div>
+            <a href={link} target="_blank" rel="noopener noreferrer" className="text-muted">
+              View
+            </a>
+          </div>
+        ) : null}
       </div>
-      {badges?.length ? (
-        <div className="badge-group">
-          {badges.map((badge) => (
-            <span className="badge" key={badge}>
-              {badge}
-            </span>
-          ))}
-        </div>
-      ) : null}
-      {link ? (
-        <div>
-          <a href={link} target="_blank" rel="noopener noreferrer" className="text-muted">
-            View
-          </a>
-        </div>
-      ) : null}
     </article>
   );
 }
