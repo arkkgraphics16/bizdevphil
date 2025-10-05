@@ -114,7 +114,7 @@ export default function About() {
   ];
 
   return (
-    <div className="container">
+    <div className="container about-container">
       <div className="about-layout">
         <aside className="about-sidebar" aria-label="Profile overview">
           {portraitSrc ? (
