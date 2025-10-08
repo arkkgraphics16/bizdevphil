@@ -40,6 +40,7 @@ export default function Services() {
             badges={service.badges}
             link={service.link}
             previews={service.previews}
+            icons={service.icons}
           />
         ))}
         {showResearch &&

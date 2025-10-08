@@ -1,5 +1,16 @@
 import { useMemo, useState } from 'react';
-import { Mail, Bot, ClipboardCheck, BarChart, LayoutGrid } from 'lucide-react';
+import {
+  Mail,
+  Bot,
+  ClipboardCheck,
+  BarChart,
+  LayoutGrid,
+  Facebook,
+  Twitter,
+  Youtube,
+  Instagram,
+  Video,
+} from 'lucide-react';
 import resolveAssetPath from '../utils/assetPath.js';
 
 const ICON_MAP = {
@@ -7,9 +18,27 @@ const ICON_MAP = {
   'Automated Chats': Bot,
   'Client Onboarding Automation': ClipboardCheck,
   'Performance Reports': BarChart,
+  'Video Editing': Video,
 };
 
-export default function PreviewCard({ title, result, badges = [], link, previews = [] }) {
+const PLATFORM_ICON_MAP = {
+  Facebook,
+  Twitter,
+  Youtube,
+  Instagram,
+  Video,
+  Tiktok: Video,
+  Threads: Video,
+};
+
+export default function PreviewCard({
+  title,
+  result,
+  badges = [],
+  link,
+  previews = [],
+  icons = [],
+}) {
   const normalizedPreviews = useMemo(
     () =>
       (Array.isArray(previews) ? previews : [])
@@ -28,6 +57,19 @@ export default function PreviewCard({ title, result, badges = [], link, previews
     ? normalizedPreviews[Math.min(activePreviewIndex, normalizedPreviews.length - 1)]
     : null;
   const IconComponent = ICON_MAP[title] || LayoutGrid;
+  const platformIcons = useMemo(
+    () =>
+      (Array.isArray(icons) ? icons : [])
+        .map((name) => {
+          const PlatformIcon = PLATFORM_ICON_MAP[name];
+          if (!PlatformIcon) {
+            return null;
+          }
+          return { name, PlatformIcon };
+        })
+        .filter(Boolean),
+    [icons]
+  );
 
   const handleToggle = () => {
     if (hasAlternate) {
@@ -94,6 +136,13 @@ export default function PreviewCard({ title, result, badges = [], link, previews
       )}
       <div className="preview-card-body stack-md">
         <h3 style={{ marginBottom: '0.25rem' }}>{title}</h3>
+        {platformIcons.length ? (
+          <div className="preview-card-icons" aria-hidden="true">
+            {platformIcons.map(({ name, PlatformIcon }) => (
+              <PlatformIcon key={name} className="preview-card-icon" />
+            ))}
+          </div>
+        ) : null}
         <p className="text-muted">{result}</p>
         {badges?.length ? (
           <div className="badge-group">

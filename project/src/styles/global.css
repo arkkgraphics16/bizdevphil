@@ -131,6 +131,18 @@ section[data-section] {
   padding: 1.75rem;
 }
 
+.preview-card-icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  color: var(--accent);
+}
+
+.preview-card-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .card:hover,
 .card:focus-within {
   transform: translateY(-4px);
