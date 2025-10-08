@@ -251,6 +251,40 @@
           "alt": "Placeholder preview of the Savore website."
         }
       ]
+    },
+    {
+      "tab": "Automations",
+      "title": "Update Emails",
+      "result": "Syncs announcements and follow-ups automatically across the channels your team already uses.",
+      "badges": [
+        "N8N",
+        "Discord",
+        "webhook"
+      ]
+    },
+    {
+      "tab": "Automations",
+      "title": "Automated Chats",
+      "result": "Builds guided chat journeys that respond instantly and qualify leads around the clock.",
+      "badges": [
+        "ManyChat"
+      ]
+    },
+    {
+      "tab": "Automations",
+      "title": "Client Onboarding Automation",
+      "result": "Delivers welcome packets, next steps, and reminders without manual chasing.",
+      "badges": [
+        "Mailjet"
+      ]
+    },
+    {
+      "tab": "Automations",
+      "title": "Performance Reports",
+      "result": "Compiles campaign metrics into ready-to-share snapshots on a recurring schedule.",
+      "badges": [
+        "SEO"
+      ]
     }
   ],
   "researches": [
