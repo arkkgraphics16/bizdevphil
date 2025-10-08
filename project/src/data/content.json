@@ -285,6 +285,34 @@
       "badges": [
         "SEO"
       ]
+    },
+    {
+      "tab": "Content",
+      "title": "Social Media Handling",
+      "result": "Full-package consistent management across Facebook, TikTok, Instagram, X, YouTube, & Threads.",
+      "badges": [
+        "Management",
+        "Marketing"
+      ],
+      "icons": [
+        "Facebook",
+        "Tiktok",
+        "Instagram",
+        "Twitter",
+        "Youtube",
+        "Threads"
+      ]
+    },
+    {
+      "tab": "Content",
+      "title": "Video Editing",
+      "result": "Fast, social-optimized video editing workflow built for creators and brands.",
+      "badges": [
+        "Capcut"
+      ],
+      "icons": [
+        "Video"
+      ]
     }
   ],
   "researches": [
