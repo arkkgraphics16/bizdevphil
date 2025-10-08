@@ -1,5 +1,13 @@
 import { useMemo, useState } from 'react';
+import { Mail, Bot, ClipboardCheck, BarChart, LayoutGrid } from 'lucide-react';
 import resolveAssetPath from '../utils/assetPath.js';
+
+const ICON_MAP = {
+  'Update Emails': Mail,
+  'Automated Chats': Bot,
+  'Client Onboarding Automation': ClipboardCheck,
+  'Performance Reports': BarChart,
+};
 
 export default function PreviewCard({ title, result, badges = [], link, previews = [] }) {
   const normalizedPreviews = useMemo(
@@ -19,6 +27,7 @@ export default function PreviewCard({ title, result, badges = [], link, previews
   const activePreview = hasPreviews
     ? normalizedPreviews[Math.min(activePreviewIndex, normalizedPreviews.length - 1)]
     : null;
+  const IconComponent = ICON_MAP[title] || LayoutGrid;
 
   const handleToggle = () => {
     if (hasAlternate) {
@@ -79,7 +88,9 @@ export default function PreviewCard({ title, result, badges = [], link, previews
           </button>
         </figure>
       ) : (
-        <div className="gradient-thumb" aria-hidden="true"></div>
+        <div className="preview-icon" aria-hidden="true">
+          <IconComponent className="preview-icon-symbol" />
+        </div>
       )}
       <div className="preview-card-body stack-md">
         <h3 style={{ marginBottom: '0.25rem' }}>{title}</h3>

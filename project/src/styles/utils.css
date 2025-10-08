@@ -40,6 +40,21 @@
   mix-blend-mode: screen;
 }
 
+.preview-icon {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(36, 24, 64, 0.85), rgba(16, 12, 32, 0.95));
+  display: grid;
+  place-items: center;
+}
+
+.preview-icon-symbol {
+  width: 3rem;
+  height: 3rem;
+  color: var(--accent);
+}
+
 .preview-media {
   display: grid;
   gap: 0.5rem;
