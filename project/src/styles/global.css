@@ -182,13 +182,13 @@ section[data-section] {
 }
 
 .btn-secondary {
-  background: var(--surface-2);
-  color: var(--text);
+  background: #90aa46;
+  color: var(--accent-contrast);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background: var(--accent);
+  background: #7f953d;
   color: var(--accent-contrast);
 }
 
