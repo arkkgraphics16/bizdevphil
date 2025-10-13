@@ -51,6 +51,7 @@ export default function Contact() {
     try {
       const templateParams = {
         from_name: form.name,
+        from_email: form.email,
         reply_to: form.email,
         message: form.message,
       };

@@ -45,6 +45,7 @@ npm install @emailjs/browser
 - Add an Email Service (e.g., Gmail, Outlook, or SMTP)
 - Create a Template with variables you will pass from the form:
   - `from_name`
+  - `from_email`
   - `reply_to` (used as reply-to email)
   - `message`
 
@@ -67,3 +68,4 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id
 
 - The Contact form validates inputs and calls `emailjs.send(serviceId, templateId, params, publicKey)`.
 - Status messages render inline for success and failure.
+- In the EmailJS template settings, set the “Reply-To” field to `{{reply_to}}` so replying goes to the sender’s email.
