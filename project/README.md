@@ -48,6 +48,8 @@ npm install @emailjs/browser
   - `from_email`
   - `reply_to` (used as reply-to email)
   - `message`
+  - `name` (duplicate of `from_name` for legacy templates)
+  - `email` (duplicate of `from_email` for legacy templates)
 
 3) Configure environment variables
 
@@ -69,3 +71,4 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id
 - The Contact form validates inputs and calls `emailjs.send(serviceId, templateId, params, publicKey)`.
 - Status messages render inline for success and failure.
 - In the EmailJS template settings, set the “Reply-To” field to `{{reply_to}}` so replying goes to the sender’s email.
+- In the EmailJS template body include the placeholders for name and email, e.g. `Name: {{from_name}}` and `Email: {{from_email}}` (or `{{name}}` / `{{email}}`).

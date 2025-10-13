@@ -54,6 +54,8 @@ export default function Contact() {
         from_email: form.email,
         reply_to: form.email,
         message: form.message,
+        name: form.name,
+        email: form.email,
       };
 
       await emailjs.send(
