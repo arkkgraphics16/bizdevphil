@@ -134,7 +134,7 @@ export default function Contact() {
             {status === 'submitting' ? 'Sending…' : 'Send Message'}
           </button>
           <a
-            href="https://m.me/bizdevphil"
+            href="https://www.facebook.com/jezrelphil.nacar#"
             className="btn btn-secondary"
             target="_blank"
             rel="noopener noreferrer"
