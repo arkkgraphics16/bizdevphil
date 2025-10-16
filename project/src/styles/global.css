@@ -182,14 +182,14 @@ section[data-section] {
 }
 
 .btn-secondary {
-  background: #90aa46;
+  background: #caff31;
   color: #000000;
   font-weight: 700;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background: #7f953d;
+  background: #b1e600;
   color: #000000;
 }
 
