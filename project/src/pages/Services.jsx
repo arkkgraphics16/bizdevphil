@@ -5,10 +5,19 @@ import ResearchCard from '../components/ResearchCard.jsx';
 import CTA from '../components/CTA.jsx';
 import content from '../data/content.json';
 
-const TAB_ORDER = ['All', 'Websites Branding', 'Apps & Tools', 'Content', 'Researches', 'Automations'];
+const TAB_ORDER = [
+  'All',
+  'Websites Branding',
+  'Apps & Tools',
+  'Content',
+  'Ads Marketing',
+  'Researches',
+  'Automations',
+];
 
 export default function Services() {
-  const { services, researches } = content;
+  const services = content.services ?? [];
+  const researches = content.researches ?? [];
   const [activeTab, setActiveTab] = useState('All');
 
   const filteredServices = useMemo(() => {

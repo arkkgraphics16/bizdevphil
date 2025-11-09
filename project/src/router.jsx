@@ -6,6 +6,7 @@ import Services from './pages/Services.jsx';
 import Contact from './pages/Contact.jsx';
 import Privacy from './pages/Privacy.jsx';
 import Terms from './pages/Terms.jsx';
+import ResearchPlan from './pages/ResearchPlan.jsx';
 import scrollToHash from './utils/scrollToHash.js';
 
 function ScrollManager() {
@@ -33,6 +34,7 @@ export default function AppRouter() {
         <Route path="/" element={<App />}>
           <Route index element={<About />} />
           <Route path="services" element={<Services />} />
+          <Route path="services/research-plan" element={<ResearchPlan />} />
           <Route path="contact" element={<Contact />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />

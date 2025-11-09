@@ -5,6 +5,8 @@ import {
   ClipboardCheck,
   BarChart,
   LayoutGrid,
+  Megaphone,
+  Share2,
   Facebook,
   Twitter,
   Youtube,
@@ -19,6 +21,8 @@ const ICON_MAP = {
   'Client Onboarding Automation': ClipboardCheck,
   'Performance Reports': BarChart,
   'Video Editing': Video,
+  'Social Media Marketing': Share2,
+  'Ads Marketing': Megaphone,
 };
 
 const PLATFORM_ICON_MAP = {

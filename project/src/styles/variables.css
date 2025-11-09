@@ -13,6 +13,9 @@
   --muted: #545466;
   --accent: #7c3aed;
   --accent-contrast: #ffffff;
+  --brand-green: #2f9e44;
+  --icon-surface: rgba(47, 158, 68, 0.12);
+  --card-media-bg: linear-gradient(135deg, #f3f4f6, #e6e9ef);
 }
 
 [data-theme='dark'] {
@@ -23,6 +26,9 @@
   --muted: #a8a8b8;
   --accent: #7c3aed;
   --accent-contrast: #ffffff;
+  --brand-green: #55c271;
+  --icon-surface: rgba(85, 194, 113, 0.14);
+  --card-media-bg: linear-gradient(135deg, #252531, #1b1b24);
 }
 
 :root {
