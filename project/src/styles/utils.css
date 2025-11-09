@@ -44,7 +44,7 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(36, 24, 64, 0.85), rgba(16, 12, 32, 0.95));
+  background: var(--card-media-bg);
   display: grid;
   place-items: center;
 }
@@ -52,7 +52,7 @@
 .preview-icon-symbol {
   width: 3rem;
   height: 3rem;
-  color: var(--accent);
+  color: var(--brand-green);
 }
 
 .preview-media {

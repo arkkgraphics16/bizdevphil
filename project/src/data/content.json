@@ -30,7 +30,7 @@
       },
       {
         "label": "TikTok",
-        "href": "#"
+        "href": "https://www.tiktok.com/@bizdevworks"
       }
     ]
   },
@@ -202,6 +202,35 @@
       ]
     },
     {
+      "tab": "Ads Marketing",
+      "title": "Social Media Marketing",
+      "result": "Weekly campaigns that blend organic hooks with paid boosts to drive discovery.",
+      "badges": [
+        "Awareness",
+        "Engagement"
+      ],
+      "icons": [
+        "Facebook",
+        "Instagram",
+        "Youtube",
+        "Tiktok"
+      ]
+    },
+    {
+      "tab": "Ads Marketing",
+      "title": "Ads Marketing",
+      "result": "Full-funnel ads setup, testing, and reporting focused on inquiries and bookings.",
+      "badges": [
+        "Acquisition",
+        "Optimization"
+      ],
+      "icons": [
+        "Facebook",
+        "Instagram",
+        "Youtube"
+      ]
+    },
+    {
       "tab": "Websites Branding",
       "title": "TerraNova Realty",
       "result": "Regenerative land stewardship site for TerraNova's master-planned communities.",
@@ -322,7 +351,8 @@
       "method": "Research 50 hooks; select the top 3 by performance; write scripts; post for 1 month.",
       "result": "TBD — track views, watch time, CTR, and inquiries weekly.",
       "period": "30 days (4-week cycle)",
-      "tools": "Posting suite + spreadsheet tracker"
+      "tools": "Posting suite + spreadsheet tracker",
+      "planPath": "/services/research-plan"
     }
   ],
   "contact": {
