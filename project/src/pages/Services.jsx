@@ -10,7 +10,7 @@ const TAB_ORDER = [
   'Websites Branding',
   'Apps & Tools',
   'Content',
-  'Ads Marketing',
+  'Marketing',
   'Researches',
   'Automations',
 ];

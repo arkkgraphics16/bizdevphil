@@ -129,6 +129,10 @@ section[data-section] {
 
 .card--preview .preview-card-body {
   padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
 }
 
 .preview-card-icons {
@@ -141,6 +145,14 @@ section[data-section] {
 .preview-card-icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.preview-card-actions {
+  margin-top: auto;
+}
+
+.preview-card-link {
+  width: fit-content;
 }
 
 .plan-step-list {
@@ -201,15 +213,15 @@ section[data-section] {
 }
 
 .btn-secondary {
-  background: #caff31;
-  color: #000000;
+  background: var(--brand-green);
+  color: var(--brand-green-contrast);
   font-weight: 700;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background: #b1e600;
-  color: #000000;
+  background: var(--brand-green-hover);
+  color: var(--brand-green-contrast);
 }
 
 header nav a,

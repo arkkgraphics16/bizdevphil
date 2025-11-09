@@ -42,6 +42,7 @@ export default function PreviewCard({
   link,
   previews = [],
   icons = [],
+  ctaLabel = 'View',
 }) {
   const normalizedPreviews = useMemo(
     () =>
@@ -101,6 +102,8 @@ export default function PreviewCard({
     }
   };
 
+  const isExternalLink = typeof link === 'string' && /^https?:\/\//i.test(link);
+
   return (
     <article className="card card--preview">
       {activePreview ? (
@@ -158,9 +161,14 @@ export default function PreviewCard({
           </div>
         ) : null}
         {link ? (
-          <div>
-            <a href={link} target="_blank" rel="noopener noreferrer" className="text-muted">
-              View
+          <div className="preview-card-actions">
+            <a
+              href={link}
+              target={isExternalLink ? '_blank' : undefined}
+              rel={isExternalLink ? 'noopener noreferrer' : undefined}
+              className="btn btn-secondary preview-card-link"
+            >
+              {ctaLabel}
             </a>
           </div>
         ) : null}
