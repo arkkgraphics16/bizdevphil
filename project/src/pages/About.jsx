@@ -1,10 +1,11 @@
 import AboutSidebar from '../components/AboutSidebar.jsx';
 import CTA from '../components/CTA.jsx';
 import PageSectionNav from '../components/PageSectionNav.jsx';
+import TestimonialsCarousel from '../components/TestimonialsCarousel.jsx';
 import content from '../data/content.json';
 
 export default function About() {
-  const { identity, brands, contact } = content;
+  const { identity, brands, contact, testimonials } = content;
 
   return (
     <div className="container about-container">
@@ -29,8 +30,8 @@ export default function About() {
                 <div className="stack-sm">
                   <h2 style={{ fontSize: '1.5rem' }}>{identity.subtitle}</h2>
                   <p className="text-muted">
-                    I help growing brands remove friction online so more guests book, buy, and inquire. From websites to automation,
-                    every project is built to deliver measurable outcomes.
+                    I help growing brands remove friction online so more guests book, buy, and inquire. From websites to automation
+                    and full-funnel marketing systems, every project is built to deliver measurable outcomes.
                   </p>
                 </div>
               </div>
@@ -39,8 +40,11 @@ export default function About() {
 
           <section id="testimonials" data-section className="section about-section">
             <div className="stack-md">
-              <h2>Testimonials</h2>
-              <div className="notice">Testimonials coming soon.</div>
+              <div className="stack-sm">
+                <h2>Testimonials</h2>
+                <p className="text-muted">What collaborators say about our work together.</p>
+              </div>
+              <TestimonialsCarousel testimonials={testimonials} />
             </div>
           </section>
 

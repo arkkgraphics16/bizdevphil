@@ -1,7 +1,7 @@
 {
   "identity": {
     "name": "Biz Dev Phil",
-    "subtitle": "Online Brand Strategist",
+    "subtitle": "Online Brand & Marketing Strategist",
     "value": "Strategy-first partner for founders ready to scale: I build conversion-driven websites, run full-funnel marketing, and lead content production so launches stay on schedule, teams stay aligned, and every moment moves people from curious to committed advocates for your brand across all channels daily.",
     "portrait": {
       "src": "images/profile/portrait.jpg",
@@ -45,7 +45,20 @@
     "Pinoyship Japan",
     "32+ SaaS founders in Reddit"
   ],
-  "testimonials": [],
+  "testimonials": [
+    {
+      "quote": "Honestly, we’re lucky to have crossed paths with someone capable of moving so naturally between creative narrative, market psychology, and emotional precision. You understand how to feel the crowd.",
+      "author": "Pablo Garcia",
+      "role": "Founder of Lucia Decode",
+      "location": "Oviedo, Asturias Spain"
+    },
+    {
+      "quote": "At only 20 years old, you already have the skills to create apps, automations, and ads. That’s truly impressive.",
+      "author": "Michael Reyes",
+      "role": "CEO of Protocode Solutions",
+      "location": "Cavite"
+    }
+  ],
   "services": [
     {
       "tab": "Apps & Tools",
