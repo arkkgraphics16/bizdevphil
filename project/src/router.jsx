@@ -7,6 +7,7 @@ import Contact from './pages/Contact.jsx';
 import Privacy from './pages/Privacy.jsx';
 import Terms from './pages/Terms.jsx';
 import ResearchPlan from './pages/ResearchPlan.jsx';
+import ViralHookResearch from './pages/ViralHookResearch.jsx';
 import scrollToHash from './utils/scrollToHash.js';
 
 function ScrollManager() {
@@ -35,6 +36,7 @@ export default function AppRouter() {
           <Route index element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="services/research-plan" element={<ResearchPlan />} />
+          <Route path="services/viral-hook-research" element={<ViralHookResearch />} />
           <Route path="contact" element={<Contact />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />

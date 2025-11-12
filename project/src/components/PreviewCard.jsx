@@ -12,6 +12,7 @@ import {
   Youtube,
   Instagram,
   Video,
+  ClipboardList,
 } from 'lucide-react';
 import resolveAssetPath from '../utils/assetPath.js';
 
@@ -23,6 +24,7 @@ const ICON_MAP = {
   'Video Editing': Video,
   'Social Media Marketing': Share2,
   'Ads Marketing': Megaphone,
+  'Content Plan': ClipboardList,
 };
 
 const PLATFORM_ICON_MAP = {
