@@ -350,6 +350,16 @@
     },
     {
       "tab": "Content",
+      "title": "Content Plan",
+      "result": "Research-backed content calendar covering formats, hooks, and posting cadence.",
+      "badges": [
+        "Strategy",
+        "Insights"
+      ],
+      "link": "/services/research-plan"
+    },
+    {
+      "tab": "Content",
       "title": "Video Editing",
       "result": "Fast, social-optimized video editing workflow built for creators and brands.",
       "badges": [
@@ -363,13 +373,22 @@
   ],
   "researches": [
     {
-      "title": "Client X — Content Strategy Test",
+      "title": "Content Research Sprint Plan",
+      "goal": "Identify winning formats, hooks, and gaps across 50+ competitors to steer your next calendar.",
+      "method": "Audit competitor activity, map engagement trends, surface white space, and translate the findings into a monthly roadmap.",
+      "result": "A prioritized action plan with formats to double down on, gaps to own, and metrics benchmarks to track.",
+      "period": "30 days (4-week cycle)",
+      "tools": "Competitor tracker + analytics dashboard",
+      "planPath": "/services/research-plan"
+    },
+    {
+      "title": "Content Viral Hook Research",
       "goal": "Identify the most effective hooks for the niche to drive view time and inquiries.",
       "method": "Research 50 hooks; select the top 3 by performance; write scripts; post for 1 month.",
       "result": "TBD — track views, watch time, CTR, and inquiries weekly.",
       "period": "30 days (4-week cycle)",
       "tools": "Posting suite + spreadsheet tracker",
-      "planPath": "/services/research-plan"
+      "planPath": "/services/viral-hook-research"
     }
   ],
   "contact": {
